@@ -72,15 +72,17 @@ signal fdigit: INTEGER RANGE 0 TO 7:=0;
 signal sdigit: INTEGER RANGE 0 TO 7:=0;
 
 signal tdigit: INTEGER RANGE 0 TO 7:=0;
-signal message : INTEGER RANGE 0 TO 7 :=0;
+signal message1 : INTEGER RANGE 0 TO 7 :=0;
+
+signal message2 : INTEGER RANGE 0 TO 7 :=0;
 begin
 programSelect <= Mode;
 operationSelect <= not Mode;
 clockCycle : clockMaker port map (rise =>rise , fall=>fall ,clock=>clock);
-program : ProgrammingBlock port map ( clock =>clk,programSelect => mode,Digits => input, message => lcdflag
-fdigit => firstNum, sdigit => secondNum, tdigit => thirdNum);
-operation : OperationBlock port map ( clock => clk , operationSelect => slct, Digits => input , fdigit=>Digit1,
-sdigit=>Digit2,tdigit => Digit3,message => dispCode);
+program : ProgrammingBlock port map ( clk=>clock,mode =>programSelect ,input=>Digits , lcdflag =>message1
+, firstNum => fdigit, secondNum => sdigit,  thirdNum => tdigit);
+operation : OperationBlock port map ( clk => clock , slct =>operationSelect ,input => Digits , Digit1=>fdigit,
+Digit2 =>sdigit, Digit3 => tdigit,dispCode => message2);
 
 
 end Behavioral;

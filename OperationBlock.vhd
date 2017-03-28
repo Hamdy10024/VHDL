@@ -42,17 +42,14 @@ end OperationBlock;
 
 architecture Behavioral of OperationBlock is
 -- signals
-signal message : integer range 0 to 9 := 5; -- initial state : LOCK
+signal message : integer range 0 to 9 := 0; -- initial state : LOCK
 begin
 
-	shared variable state : integer range 0 to 10 := 0;	
-	process(slct) 
-	begin
-	state:=0;
-	message<=5;
-	end process;
-	process (clk)
+	
+process (clk,slct)
 	-- variables
+	
+variable state : integer range 0 to 10 := 0;	
 	begin
 		if (clk'event and clk = '1' and slct = '1') then
 			if (state = 0) then -- initial state
@@ -92,7 +89,10 @@ begin
 				else
 					state := 2;
 				end if;
-			end if;			
+			end if;	
+		elsif (slct = '0') then
+			state:=0;
+			message <= 0;
 		end if;
 	end process;
 	dispCode <= message;

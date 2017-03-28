@@ -35,9 +35,10 @@ end clockMaker;
 
 architecture Behavioral of clockMaker is
 
-begin
 signal clok : STD_LOGIC:='0';
+begin
 process(rise,fall)
+begin
 if(rise = '1') then
 clok<='1';
 elsif ( fall = '1') then
