@@ -44,11 +44,17 @@ architecture Behavioral of OperationBlock is
 -- signals
 signal message : integer range 0 to 9 := 5; -- initial state : LOCK
 begin
+
+	shared variable state : integer range 0 to 10 := 0;	
+	process(slct) 
+	begin
+	state:=0;
+	message<=5;
+	end process;
 	process (clk)
 	-- variables
-	variable state : integer range 0 to 10 := 0;	
 	begin
-		if (clk'event and clk = '1') then
+		if (clk'event and clk = '1' and slct = '1') then
 			if (state = 0) then -- initial state
 				message <= 5;
 				if (conv_integer(unsigned(input)) = Digit1) then
