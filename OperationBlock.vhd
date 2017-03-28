@@ -27,20 +27,67 @@ use IEEE.STD_LOGIC_UNSIGNED.ALL;
 --library UNISIM;
 --use UNISIM.VComponents.all;
 
+
 entity OperationBlock is
-    Port ( slct : in  STD_LOGIC;
-           clock : in  STD_LOGIC;
-           digit : in  STD_LOGIC_VECTOR (2 downto 0)  ;
-			  Digit1: in Integer range 0  to 7;
-			  Digit2: in Integer range 0  to 7;
-			  Digit3: in Integer range 0  to 7;
-			  dispCode : out Integer range 0 to 7); --specific integer to use in 7 seg 
+port (
+    clk : in std_logic;
+	slct : in std_logic;
+	input : in std_logic_vector(2 downto 0);
+    Digit1 : in integer range 0 to 7;
+	Digit2 : in integer range 0 to 7;
+	Digit3 : in integer range 0 to 7;
+	dispCode : out integer range 0 to 7 -- 5 >> LOCK , 6 >> ERR , 7 >> OPEN
+);
 end OperationBlock;
 
 architecture Behavioral of OperationBlock is
-
+-- signals
+signal message : integer range 0 to 9 := 5; -- initial state : LOCK
 begin
-
-
+	process (clk)
+	-- variables
+	variable state : integer range 0 to 10 := 0;	
+	begin
+		if (clk'event and clk = '1') then
+			if (state = 0) then -- initial state
+				message <= 5;
+				if (conv_integer(unsigned(input)) = Digit1) then
+					state := 1;
+				else
+					state := 2;
+				end if;
+			elsif (state = 1) then -- enterd matching 1st digit
+				message <= 5;
+				if (conv_integer(unsigned(input)) = Digit2) then
+					state := 3;
+				else
+					state := 4;
+				end if;
+			elsif (state = 2) then -- enterd non-matching 1st digit
+				message <= 5;
+				state := 4;
+			elsif (state = 3) then -- enterd matching 2nd digit
+				message <= 5;
+				if (conv_integer(unsigned(input)) = Digit3) then
+					state := 5;
+				else
+					state := 6;
+				end if;
+			elsif (state = 4) then -- enterd non-matching 2nd or earlier digit
+				message <= 5;
+				state := 6;
+			elsif (state = 5) then -- enterd matching 3rd digit
+				message <= 7;
+				state := 0;
+			elsif (state = 6) then -- enterd non-matching 3rd or earlier digit
+				message <= 6;
+				if (conv_integer(unsigned(input)) = Digit1) then
+					state := 1;
+				else
+					state := 2;
+				end if;
+			end if;			
+		end if;
+	end process;
+	dispCode <= message;
 end Behavioral;
-
