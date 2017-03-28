@@ -1,0 +1,1 @@
+xst -ise "C:/Users/Mahmoud/Desktop/LockDetector/LockDetector.ise" -intstyle ise -ifn "C:/Users/Mahmoud/Desktop/LockDetector/ProgrammingBlock.xst" -ofn "C:/Users/Mahmoud/Desktop/LockDetector/ProgrammingBlock.syr"

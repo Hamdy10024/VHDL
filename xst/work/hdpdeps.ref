@@ -1,0 +1,9 @@
+V3 3
+FL C:/Users/Mahmoud/Desktop/LockDetector/ProgrammingBlock.vhd 2017/03/27.23:03:56 K.31
+EN work/ProgrammingBlock 1490648666 \
+      FL C:/Users/Mahmoud/Desktop/LockDetector/ProgrammingBlock.vhd \
+      PB ieee/std_logic_1164 1200023565 PB ieee/std_logic_arith 1200023566 \
+      PB ieee/STD_LOGIC_UNSIGNED 1200023567
+AR work/ProgrammingBlock/Behavioral 1490648667 \
+      FL C:/Users/Mahmoud/Desktop/LockDetector/ProgrammingBlock.vhd \
+      EN work/ProgrammingBlock 1490648666
