@@ -1,0 +1,184 @@
+xst -ise "C:/Users/Mahmoud/Desktop/MachIdent/MachIdent.ise" -intstyle ise -ifn "C:/Users/Mahmoud/Desktop/MachIdent/TopModule.xst" -ofn "C:/Users/Mahmoud/Desktop/MachIdent/TopModule.syr"
+xst -ise "C:/Users/Mahmoud/Desktop/MachIdent/MachIdent.ise" -intstyle ise -ifn "C:/Users/Mahmoud/Desktop/MachIdent/TopModule.xst" -ofn "C:/Users/Mahmoud/Desktop/MachIdent/TopModule.syr"
+xst -ise "C:/Users/Mahmoud/Desktop/MachIdent/MachIdent.ise" -intstyle ise -ifn "C:/Users/Mahmoud/Desktop/MachIdent/TopModule.xst" -ofn "C:/Users/Mahmoud/Desktop/MachIdent/TopModule.syr"
+xst -ise "C:/Users/Mahmoud/Desktop/MachIdent/MachIdent.ise" -intstyle ise -ifn "C:/Users/Mahmoud/Desktop/MachIdent/TopModule.xst" -ofn "C:/Users/Mahmoud/Desktop/MachIdent/TopModule.syr"
+xst -ise "C:/Users/Mahmoud/Desktop/MachIdent/MachIdent.ise" -intstyle ise -ifn "C:/Users/Mahmoud/Desktop/MachIdent/TopModule.xst" -ofn "C:/Users/Mahmoud/Desktop/MachIdent/TopModule.syr"
+xst -ise "C:/Users/Mahmoud/Desktop/MachIdent/MachIdent.ise" -intstyle ise -ifn "C:/Users/Mahmoud/Desktop/MachIdent/TopModule.xst" -ofn "C:/Users/Mahmoud/Desktop/MachIdent/TopModule.syr"
+xst -ise "C:/Users/Mahmoud/Desktop/MachIdent/MachIdent.ise" -intstyle ise -ifn "C:/Users/Mahmoud/Desktop/MachIdent/TopModule.xst" -ofn "C:/Users/Mahmoud/Desktop/MachIdent/TopModule.syr"
+xst -ise "C:/Users/Mahmoud/Desktop/MachIdent/MachIdent.ise" -intstyle ise -ifn "C:/Users/Mahmoud/Desktop/MachIdent/TopModule.xst" -ofn "C:/Users/Mahmoud/Desktop/MachIdent/TopModule.syr"
+xst -ise "C:/Users/Mahmoud/Desktop/MachIdent/MachIdent/MachIdent.ise" -intstyle ise -ifn "C:/Users/Mahmoud/Desktop/MachIdent/MachIdent/TopModule.xst" -ofn "C:/Users/Mahmoud/Desktop/MachIdent/MachIdent/TopModule.syr"
+xst -ise "C:/Users/Mahmoud/Desktop/MachIdent/MachIdent/MachIdent.ise" -intstyle ise -ifn "C:/Users/Mahmoud/Desktop/MachIdent/MachIdent/TopModule.xst" -ofn "C:/Users/Mahmoud/Desktop/MachIdent/MachIdent/TopModule.syr"
+xst -ise "C:/Users/Mahmoud/Desktop/MachIdent/MachIdent/MachIdent.ise" -intstyle ise -ifn "C:/Users/Mahmoud/Desktop/MachIdent/MachIdent/TopModule.xst" -ofn "C:/Users/Mahmoud/Desktop/MachIdent/MachIdent/TopModule.syr"
+xst -ise "C:/Users/Mahmoud/Desktop/MachIdent/MachIdent/MachIdent.ise" -intstyle ise -ifn "C:/Users/Mahmoud/Desktop/MachIdent/MachIdent/TopModule.xst" -ofn "C:/Users/Mahmoud/Desktop/MachIdent/MachIdent/TopModule.syr"
+xst -ise "C:/Users/Mahmoud/Desktop/MachIdent/MachIdent/MachIdent.ise" -intstyle ise -ifn "C:/Users/Mahmoud/Desktop/MachIdent/MachIdent/TopModule.xst" -ofn "C:/Users/Mahmoud/Desktop/MachIdent/MachIdent/TopModule.syr"
+ngdbuild -ise "C:/Users/Mahmoud/Desktop/MachIdent/MachIdent/MachIdent.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "TopModule.ngc" TopModule.ngd
+ngdbuild -ise "C:/Users/Mahmoud/Desktop/MachIdent/MachIdent/MachIdent.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "TopModule.ngc" TopModule.ngd
+map -ise "C:/Users/Mahmoud/Desktop/MachIdent/MachIdent/MachIdent.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o TopModule_map.ncd TopModule.ngd TopModule.pcf
+par -ise "C:/Users/Mahmoud/Desktop/MachIdent/MachIdent/MachIdent.ise" -w -intstyle ise -ol std -t 1 TopModule_map.ncd TopModule.ncd TopModule.pcf
+trce -ise "C:/Users/Mahmoud/Desktop/MachIdent/MachIdent/MachIdent.ise" -intstyle ise -e 3 -s 4 -xml TopModule TopModule.ncd -o TopModule.twr TopModule.pcf -ucf TopModule.ucf
+xst -ise "C:/Documents and Settings/304/Desktop/MachIdent/MachIdent.ise" -intstyle ise -ifn "C:/Documents and Settings/304/Desktop/MachIdent/TopModule.xst" -ofn "C:/Documents and Settings/304/Desktop/MachIdent/TopModule.syr"
+ngdbuild -ise "C:/Documents and Settings/304/Desktop/MachIdent/MachIdent.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "TopModule.ngc" TopModule.ngd
+map -ise "C:/Documents and Settings/304/Desktop/MachIdent/MachIdent.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o TopModule_map.ncd TopModule.ngd TopModule.pcf
+par -ise "C:/Documents and Settings/304/Desktop/MachIdent/MachIdent.ise" -w -intstyle ise -ol std -t 1 TopModule_map.ncd TopModule.ncd TopModule.pcf
+trce -ise "C:/Documents and Settings/304/Desktop/MachIdent/MachIdent.ise" -intstyle ise -e 3 -s 4 -xml TopModule TopModule.ncd -o TopModule.twr TopModule.pcf -ucf TopModule.ucf
+bitgen -ise "C:/Documents and Settings/304/Desktop/MachIdent/MachIdent.ise" -intstyle ise -f TopModule.ut TopModule.ncd
+xst -ise "C:/Documents and Settings/304/Desktop/MachIdent/MachIdent.ise" -intstyle ise -ifn "C:/Documents and Settings/304/Desktop/MachIdent/TopModule.xst" -ofn "C:/Documents and Settings/304/Desktop/MachIdent/TopModule.syr"
+ngdbuild -ise "C:/Documents and Settings/304/Desktop/MachIdent/MachIdent.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "TopModule.ngc" TopModule.ngd
+map -ise "C:/Documents and Settings/304/Desktop/MachIdent/MachIdent.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o TopModule_map.ncd TopModule.ngd TopModule.pcf
+par -ise "C:/Documents and Settings/304/Desktop/MachIdent/MachIdent.ise" -w -intstyle ise -ol std -t 1 TopModule_map.ncd TopModule.ncd TopModule.pcf
+trce -ise "C:/Documents and Settings/304/Desktop/MachIdent/MachIdent.ise" -intstyle ise -e 3 -s 4 -xml TopModule TopModule.ncd -o TopModule.twr TopModule.pcf -ucf TopModule.ucf
+bitgen -ise "C:/Documents and Settings/304/Desktop/MachIdent/MachIdent.ise" -intstyle ise -f TopModule.ut TopModule.ncd
+xst -ise "C:/Documents and Settings/304/Desktop/MachIdent/MachIdent.ise" -intstyle ise -ifn "C:/Documents and Settings/304/Desktop/MachIdent/TopModule.xst" -ofn "C:/Documents and Settings/304/Desktop/MachIdent/TopModule.syr"
+ngdbuild -ise "C:/Documents and Settings/304/Desktop/MachIdent/MachIdent.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "TopModule.ngc" TopModule.ngd
+map -ise "C:/Documents and Settings/304/Desktop/MachIdent/MachIdent.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o TopModule_map.ncd TopModule.ngd TopModule.pcf
+par -ise "C:/Documents and Settings/304/Desktop/MachIdent/MachIdent.ise" -w -intstyle ise -ol std -t 1 TopModule_map.ncd TopModule.ncd TopModule.pcf
+trce -ise "C:/Documents and Settings/304/Desktop/MachIdent/MachIdent.ise" -intstyle ise -e 3 -s 4 -xml TopModule TopModule.ncd -o TopModule.twr TopModule.pcf -ucf TopModule.ucf
+bitgen -ise "C:/Documents and Settings/304/Desktop/MachIdent/MachIdent.ise" -intstyle ise -f TopModule.ut TopModule.ncd
+xst -ise "C:/Documents and Settings/304/Desktop/MachIdent/MachIdent.ise" -intstyle ise -ifn "C:/Documents and Settings/304/Desktop/MachIdent/TopModule.xst" -ofn "C:/Documents and Settings/304/Desktop/MachIdent/TopModule.syr"
+ngdbuild -ise "C:/Documents and Settings/304/Desktop/MachIdent/MachIdent.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "TopModule.ngc" TopModule.ngd
+ngdbuild -ise "C:/Documents and Settings/304/Desktop/MachIdent/MachIdent.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "TopModule.ngc" TopModule.ngd
+xst -ise "C:/Documents and Settings/304/Desktop/MachIdent/MachIdent.ise" -intstyle ise -ifn "C:/Documents and Settings/304/Desktop/MachIdent/TopModule.xst" -ofn "C:/Documents and Settings/304/Desktop/MachIdent/TopModule.syr"
+ngdbuild -ise "C:/Documents and Settings/304/Desktop/MachIdent/MachIdent.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "TopModule.ngc" TopModule.ngd
+map -ise "C:/Documents and Settings/304/Desktop/MachIdent/MachIdent.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o TopModule_map.ncd TopModule.ngd TopModule.pcf
+par -ise "C:/Documents and Settings/304/Desktop/MachIdent/MachIdent.ise" -w -intstyle ise -ol std -t 1 TopModule_map.ncd TopModule.ncd TopModule.pcf
+trce -ise "C:/Documents and Settings/304/Desktop/MachIdent/MachIdent.ise" -intstyle ise -e 3 -s 4 -xml TopModule TopModule.ncd -o TopModule.twr TopModule.pcf -ucf TopModule.ucf
+bitgen -ise "C:/Documents and Settings/304/Desktop/MachIdent/MachIdent.ise" -intstyle ise -f TopModule.ut TopModule.ncd
+xst -ise "C:/Documents and Settings/304/Desktop/MachIdent/MachIdent.ise" -intstyle ise -ifn "C:/Documents and Settings/304/Desktop/MachIdent/TopModule.xst" -ofn "C:/Documents and Settings/304/Desktop/MachIdent/TopModule.syr"
+xst -ise "C:/Documents and Settings/304/Desktop/MachIdent/MachIdent.ise" -intstyle ise -ifn "C:/Documents and Settings/304/Desktop/MachIdent/TopModule.xst" -ofn "C:/Documents and Settings/304/Desktop/MachIdent/TopModule.syr"
+xst -ise "C:/Documents and Settings/304/Desktop/MachIdent/MachIdent.ise" -intstyle ise -ifn "C:/Documents and Settings/304/Desktop/MachIdent/TopModule.xst" -ofn "C:/Documents and Settings/304/Desktop/MachIdent/TopModule.syr"
+ngdbuild -ise "C:/Documents and Settings/304/Desktop/MachIdent/MachIdent.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "TopModule.ngc" TopModule.ngd
+map -ise "C:/Documents and Settings/304/Desktop/MachIdent/MachIdent.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o TopModule_map.ncd TopModule.ngd TopModule.pcf
+par -ise "C:/Documents and Settings/304/Desktop/MachIdent/MachIdent.ise" -w -intstyle ise -ol std -t 1 TopModule_map.ncd TopModule.ncd TopModule.pcf
+trce -ise "C:/Documents and Settings/304/Desktop/MachIdent/MachIdent.ise" -intstyle ise -e 3 -s 4 -xml TopModule TopModule.ncd -o TopModule.twr TopModule.pcf -ucf TopModule.ucf
+bitgen -ise "C:/Documents and Settings/304/Desktop/MachIdent/MachIdent.ise" -intstyle ise -f TopModule.ut TopModule.ncd
+xst -ise "C:/Documents and Settings/304/Desktop/MachIdent/MachIdent.ise" -intstyle ise -ifn "C:/Documents and Settings/304/Desktop/MachIdent/TopModule.xst" -ofn "C:/Documents and Settings/304/Desktop/MachIdent/TopModule.syr"
+ngdbuild -ise "C:/Documents and Settings/304/Desktop/MachIdent/MachIdent.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "TopModule.ngc" TopModule.ngd
+map -ise "C:/Documents and Settings/304/Desktop/MachIdent/MachIdent.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o TopModule_map.ncd TopModule.ngd TopModule.pcf
+par -ise "C:/Documents and Settings/304/Desktop/MachIdent/MachIdent.ise" -w -intstyle ise -ol std -t 1 TopModule_map.ncd TopModule.ncd TopModule.pcf
+trce -ise "C:/Documents and Settings/304/Desktop/MachIdent/MachIdent.ise" -intstyle ise -e 3 -s 4 -xml TopModule TopModule.ncd -o TopModule.twr TopModule.pcf -ucf TopModule.ucf
+bitgen -ise "C:/Documents and Settings/304/Desktop/MachIdent/MachIdent.ise" -intstyle ise -f TopModule.ut TopModule.ncd
+xst -ise "C:/Documents and Settings/304/Desktop/MachIdent/MachIdent.ise" -intstyle ise -ifn "C:/Documents and Settings/304/Desktop/MachIdent/TopModule.xst" -ofn "C:/Documents and Settings/304/Desktop/MachIdent/TopModule.syr"
+xst -ise "C:/Documents and Settings/304/Desktop/MachIdent/MachIdent.ise" -intstyle ise -ifn "C:/Documents and Settings/304/Desktop/MachIdent/TopModule.xst" -ofn "C:/Documents and Settings/304/Desktop/MachIdent/TopModule.syr"
+xst -ise "C:/Documents and Settings/304/Desktop/MachIdent/MachIdent.ise" -intstyle ise -ifn "C:/Documents and Settings/304/Desktop/MachIdent/TopModule.xst" -ofn "C:/Documents and Settings/304/Desktop/MachIdent/TopModule.syr"
+ngdbuild -ise "C:/Documents and Settings/304/Desktop/MachIdent/MachIdent.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "TopModule.ngc" TopModule.ngd
+ngdbuild -ise "C:/Documents and Settings/304/Desktop/MachIdent/MachIdent.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "TopModule.ngc" TopModule.ngd
+xst -ise "C:/Documents and Settings/304/Desktop/MachIdent/MachIdent.ise" -intstyle ise -ifn "C:/Documents and Settings/304/Desktop/MachIdent/TopModule.xst" -ofn "C:/Documents and Settings/304/Desktop/MachIdent/TopModule.syr"
+ngdbuild -ise "C:/Documents and Settings/304/Desktop/MachIdent/MachIdent.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "TopModule.ngc" TopModule.ngd
+map -ise "C:/Documents and Settings/304/Desktop/MachIdent/MachIdent.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o TopModule_map.ncd TopModule.ngd TopModule.pcf
+par -ise "C:/Documents and Settings/304/Desktop/MachIdent/MachIdent.ise" -w -intstyle ise -ol std -t 1 TopModule_map.ncd TopModule.ncd TopModule.pcf
+trce -ise "C:/Documents and Settings/304/Desktop/MachIdent/MachIdent.ise" -intstyle ise -e 3 -s 4 -xml TopModule TopModule.ncd -o TopModule.twr TopModule.pcf -ucf TopModule.ucf
+bitgen -ise "C:/Documents and Settings/304/Desktop/MachIdent/MachIdent.ise" -intstyle ise -f TopModule.ut TopModule.ncd
+xst -ise "C:/Documents and Settings/304/Desktop/MachIdent/MachIdent.ise" -intstyle ise -ifn "C:/Documents and Settings/304/Desktop/MachIdent/TopModule.xst" -ofn "C:/Documents and Settings/304/Desktop/MachIdent/TopModule.syr"
+ngdbuild -ise "C:/Documents and Settings/304/Desktop/MachIdent/MachIdent.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "TopModule.ngc" TopModule.ngd
+map -ise "C:/Documents and Settings/304/Desktop/MachIdent/MachIdent.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o TopModule_map.ncd TopModule.ngd TopModule.pcf
+par -ise "C:/Documents and Settings/304/Desktop/MachIdent/MachIdent.ise" -w -intstyle ise -ol std -t 1 TopModule_map.ncd TopModule.ncd TopModule.pcf
+trce -ise "C:/Documents and Settings/304/Desktop/MachIdent/MachIdent.ise" -intstyle ise -e 3 -s 4 -xml TopModule TopModule.ncd -o TopModule.twr TopModule.pcf -ucf TopModule.ucf
+bitgen -ise "C:/Documents and Settings/304/Desktop/MachIdent/MachIdent.ise" -intstyle ise -f TopModule.ut TopModule.ncd
+xst -ise "C:/Documents and Settings/304/Desktop/MachIdent/MachIdent.ise" -intstyle ise -ifn "C:/Documents and Settings/304/Desktop/MachIdent/TopModule.xst" -ofn "C:/Documents and Settings/304/Desktop/MachIdent/TopModule.syr"
+ngdbuild -ise "C:/Documents and Settings/304/Desktop/MachIdent/MachIdent.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "TopModule.ngc" TopModule.ngd
+map -ise "C:/Documents and Settings/304/Desktop/MachIdent/MachIdent.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o TopModule_map.ncd TopModule.ngd TopModule.pcf
+par -ise "C:/Documents and Settings/304/Desktop/MachIdent/MachIdent.ise" -w -intstyle ise -ol std -t 1 TopModule_map.ncd TopModule.ncd TopModule.pcf
+trce -ise "C:/Documents and Settings/304/Desktop/MachIdent/MachIdent.ise" -intstyle ise -e 3 -s 4 -xml TopModule TopModule.ncd -o TopModule.twr TopModule.pcf -ucf TopModule.ucf
+bitgen -ise "C:/Documents and Settings/304/Desktop/MachIdent/MachIdent.ise" -intstyle ise -f TopModule.ut TopModule.ncd
+xst -ise "C:/Documents and Settings/304/Desktop/MachIdent/MachIdent.ise" -intstyle ise -ifn "C:/Documents and Settings/304/Desktop/MachIdent/TopModule.xst" -ofn "C:/Documents and Settings/304/Desktop/MachIdent/TopModule.syr"
+ngdbuild -ise "C:/Documents and Settings/304/Desktop/MachIdent/MachIdent.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "TopModule.ngc" TopModule.ngd
+map -ise "C:/Documents and Settings/304/Desktop/MachIdent/MachIdent.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o TopModule_map.ncd TopModule.ngd TopModule.pcf
+par -ise "C:/Documents and Settings/304/Desktop/MachIdent/MachIdent.ise" -w -intstyle ise -ol std -t 1 TopModule_map.ncd TopModule.ncd TopModule.pcf
+trce -ise "C:/Documents and Settings/304/Desktop/MachIdent/MachIdent.ise" -intstyle ise -e 3 -s 4 -xml TopModule TopModule.ncd -o TopModule.twr TopModule.pcf -ucf TopModule.ucf
+bitgen -ise "C:/Documents and Settings/304/Desktop/MachIdent/MachIdent.ise" -intstyle ise -f TopModule.ut TopModule.ncd
+xst -ise "C:/Documents and Settings/304/Desktop/MachIdent/MachIdent.ise" -intstyle ise -ifn "C:/Documents and Settings/304/Desktop/MachIdent/TopModule.xst" -ofn "C:/Documents and Settings/304/Desktop/MachIdent/TopModule.syr"
+ngdbuild -ise "C:/Documents and Settings/304/Desktop/MachIdent/MachIdent.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "TopModule.ngc" TopModule.ngd
+map -ise "C:/Documents and Settings/304/Desktop/MachIdent/MachIdent.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o TopModule_map.ncd TopModule.ngd TopModule.pcf
+par -ise "C:/Documents and Settings/304/Desktop/MachIdent/MachIdent.ise" -w -intstyle ise -ol std -t 1 TopModule_map.ncd TopModule.ncd TopModule.pcf
+trce -ise "C:/Documents and Settings/304/Desktop/MachIdent/MachIdent.ise" -intstyle ise -e 3 -s 4 -xml TopModule TopModule.ncd -o TopModule.twr TopModule.pcf -ucf TopModule.ucf
+bitgen -ise "C:/Documents and Settings/304/Desktop/MachIdent/MachIdent.ise" -intstyle ise -f TopModule.ut TopModule.ncd
+xst -ise "C:/Documents and Settings/304/Desktop/MachIdent/MachIdent.ise" -intstyle ise -ifn "C:/Documents and Settings/304/Desktop/MachIdent/TopModule.xst" -ofn "C:/Documents and Settings/304/Desktop/MachIdent/TopModule.syr"
+ngdbuild -ise "C:/Documents and Settings/304/Desktop/MachIdent/MachIdent.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "TopModule.ngc" TopModule.ngd
+map -ise "C:/Documents and Settings/304/Desktop/MachIdent/MachIdent.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o TopModule_map.ncd TopModule.ngd TopModule.pcf
+par -ise "C:/Documents and Settings/304/Desktop/MachIdent/MachIdent.ise" -w -intstyle ise -ol std -t 1 TopModule_map.ncd TopModule.ncd TopModule.pcf
+trce -ise "C:/Documents and Settings/304/Desktop/MachIdent/MachIdent.ise" -intstyle ise -e 3 -s 4 -xml TopModule TopModule.ncd -o TopModule.twr TopModule.pcf -ucf TopModule.ucf
+bitgen -ise "C:/Documents and Settings/304/Desktop/MachIdent/MachIdent.ise" -intstyle ise -f TopModule.ut TopModule.ncd
+xst -ise "C:/Documents and Settings/304/Desktop/MachIdent/MachIdent.ise" -intstyle ise -ifn "C:/Documents and Settings/304/Desktop/MachIdent/TopModule.xst" -ofn "C:/Documents and Settings/304/Desktop/MachIdent/TopModule.syr"
+ngdbuild -ise "C:/Documents and Settings/304/Desktop/MachIdent/MachIdent.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "TopModule.ngc" TopModule.ngd
+map -ise "C:/Documents and Settings/304/Desktop/MachIdent/MachIdent.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o TopModule_map.ncd TopModule.ngd TopModule.pcf
+par -ise "C:/Documents and Settings/304/Desktop/MachIdent/MachIdent.ise" -w -intstyle ise -ol std -t 1 TopModule_map.ncd TopModule.ncd TopModule.pcf
+trce -ise "C:/Documents and Settings/304/Desktop/MachIdent/MachIdent.ise" -intstyle ise -e 3 -s 4 -xml TopModule TopModule.ncd -o TopModule.twr TopModule.pcf -ucf TopModule.ucf
+bitgen -ise "C:/Documents and Settings/304/Desktop/MachIdent/MachIdent.ise" -intstyle ise -f TopModule.ut TopModule.ncd
+xst -ise "C:/Documents and Settings/304/Desktop/MachIdent/MachIdent.ise" -intstyle ise -ifn "C:/Documents and Settings/304/Desktop/MachIdent/TopModule.xst" -ofn "C:/Documents and Settings/304/Desktop/MachIdent/TopModule.syr"
+ngdbuild -ise "C:/Documents and Settings/304/Desktop/MachIdent/MachIdent.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "TopModule.ngc" TopModule.ngd
+map -ise "C:/Documents and Settings/304/Desktop/MachIdent/MachIdent.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o TopModule_map.ncd TopModule.ngd TopModule.pcf
+par -ise "C:/Documents and Settings/304/Desktop/MachIdent/MachIdent.ise" -w -intstyle ise -ol std -t 1 TopModule_map.ncd TopModule.ncd TopModule.pcf
+trce -ise "C:/Documents and Settings/304/Desktop/MachIdent/MachIdent.ise" -intstyle ise -e 3 -s 4 -xml TopModule TopModule.ncd -o TopModule.twr TopModule.pcf -ucf TopModule.ucf
+bitgen -ise "C:/Documents and Settings/304/Desktop/MachIdent/MachIdent.ise" -intstyle ise -f TopModule.ut TopModule.ncd
+xst -ise "C:/Documents and Settings/304/Desktop/MachIdent/MachIdent.ise" -intstyle ise -ifn "C:/Documents and Settings/304/Desktop/MachIdent/TopModule.xst" -ofn "C:/Documents and Settings/304/Desktop/MachIdent/TopModule.syr"
+ngdbuild -ise "C:/Documents and Settings/304/Desktop/MachIdent/MachIdent.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "TopModule.ngc" TopModule.ngd
+map -ise "C:/Documents and Settings/304/Desktop/MachIdent/MachIdent.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o TopModule_map.ncd TopModule.ngd TopModule.pcf
+par -ise "C:/Documents and Settings/304/Desktop/MachIdent/MachIdent.ise" -w -intstyle ise -ol std -t 1 TopModule_map.ncd TopModule.ncd TopModule.pcf
+trce -ise "C:/Documents and Settings/304/Desktop/MachIdent/MachIdent.ise" -intstyle ise -e 3 -s 4 -xml TopModule TopModule.ncd -o TopModule.twr TopModule.pcf -ucf TopModule.ucf
+bitgen -ise "C:/Documents and Settings/304/Desktop/MachIdent/MachIdent.ise" -intstyle ise -f TopModule.ut TopModule.ncd
+xst -ise "C:/Documents and Settings/304/Desktop/MachIdent/MachIdent.ise" -intstyle ise -ifn "C:/Documents and Settings/304/Desktop/MachIdent/TopModule.xst" -ofn "C:/Documents and Settings/304/Desktop/MachIdent/TopModule.syr"
+ngdbuild -ise "C:/Documents and Settings/304/Desktop/MachIdent/MachIdent.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "TopModule.ngc" TopModule.ngd
+map -ise "C:/Documents and Settings/304/Desktop/MachIdent/MachIdent.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o TopModule_map.ncd TopModule.ngd TopModule.pcf
+par -ise "C:/Documents and Settings/304/Desktop/MachIdent/MachIdent.ise" -w -intstyle ise -ol std -t 1 TopModule_map.ncd TopModule.ncd TopModule.pcf
+trce -ise "C:/Documents and Settings/304/Desktop/MachIdent/MachIdent.ise" -intstyle ise -e 3 -s 4 -xml TopModule TopModule.ncd -o TopModule.twr TopModule.pcf -ucf TopModule.ucf
+bitgen -ise "C:/Documents and Settings/304/Desktop/MachIdent/MachIdent.ise" -intstyle ise -f TopModule.ut TopModule.ncd
+xst -ise "C:/Documents and Settings/304/Desktop/MachIdent/MachIdent.ise" -intstyle ise -ifn "C:/Documents and Settings/304/Desktop/MachIdent/TopModule.xst" -ofn "C:/Documents and Settings/304/Desktop/MachIdent/TopModule.syr"
+ngdbuild -ise "C:/Documents and Settings/304/Desktop/MachIdent/MachIdent.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "TopModule.ngc" TopModule.ngd
+map -ise "C:/Documents and Settings/304/Desktop/MachIdent/MachIdent.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o TopModule_map.ncd TopModule.ngd TopModule.pcf
+par -ise "C:/Documents and Settings/304/Desktop/MachIdent/MachIdent.ise" -w -intstyle ise -ol std -t 1 TopModule_map.ncd TopModule.ncd TopModule.pcf
+trce -ise "C:/Documents and Settings/304/Desktop/MachIdent/MachIdent.ise" -intstyle ise -e 3 -s 4 -xml TopModule TopModule.ncd -o TopModule.twr TopModule.pcf -ucf TopModule.ucf
+bitgen -ise "C:/Documents and Settings/304/Desktop/MachIdent/MachIdent.ise" -intstyle ise -f TopModule.ut TopModule.ncd
+xst -ise "C:/Documents and Settings/304/Desktop/MachIdent/MachIdent.ise" -intstyle ise -ifn "C:/Documents and Settings/304/Desktop/MachIdent/TopModule.xst" -ofn "C:/Documents and Settings/304/Desktop/MachIdent/TopModule.syr"
+ngdbuild -ise "C:/Documents and Settings/304/Desktop/MachIdent/MachIdent.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "TopModule.ngc" TopModule.ngd
+map -ise "C:/Documents and Settings/304/Desktop/MachIdent/MachIdent.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o TopModule_map.ncd TopModule.ngd TopModule.pcf
+par -ise "C:/Documents and Settings/304/Desktop/MachIdent/MachIdent.ise" -w -intstyle ise -ol std -t 1 TopModule_map.ncd TopModule.ncd TopModule.pcf
+trce -ise "C:/Documents and Settings/304/Desktop/MachIdent/MachIdent.ise" -intstyle ise -e 3 -s 4 -xml TopModule TopModule.ncd -o TopModule.twr TopModule.pcf -ucf TopModule.ucf
+bitgen -ise "C:/Documents and Settings/304/Desktop/MachIdent/MachIdent.ise" -intstyle ise -f TopModule.ut TopModule.ncd
+xst -ise "C:/Documents and Settings/304/Desktop/MachIdent/MachIdent.ise" -intstyle ise -ifn "C:/Documents and Settings/304/Desktop/MachIdent/TopModule.xst" -ofn "C:/Documents and Settings/304/Desktop/MachIdent/TopModule.syr"
+ngdbuild -ise "C:/Documents and Settings/304/Desktop/MachIdent/MachIdent.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "TopModule.ngc" TopModule.ngd
+map -ise "C:/Documents and Settings/304/Desktop/MachIdent/MachIdent.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o TopModule_map.ncd TopModule.ngd TopModule.pcf
+par -ise "C:/Documents and Settings/304/Desktop/MachIdent/MachIdent.ise" -w -intstyle ise -ol std -t 1 TopModule_map.ncd TopModule.ncd TopModule.pcf
+trce -ise "C:/Documents and Settings/304/Desktop/MachIdent/MachIdent.ise" -intstyle ise -e 3 -s 4 -xml TopModule TopModule.ncd -o TopModule.twr TopModule.pcf -ucf TopModule.ucf
+bitgen -ise "C:/Documents and Settings/304/Desktop/MachIdent/MachIdent.ise" -intstyle ise -f TopModule.ut TopModule.ncd
+xst -ise "C:/Documents and Settings/304/Desktop/MachIdent/MachIdent.ise" -intstyle ise -ifn "C:/Documents and Settings/304/Desktop/MachIdent/TopModule.xst" -ofn "C:/Documents and Settings/304/Desktop/MachIdent/TopModule.syr"
+ngdbuild -ise "C:/Documents and Settings/304/Desktop/MachIdent/MachIdent.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "TopModule.ngc" TopModule.ngd
+map -ise "C:/Documents and Settings/304/Desktop/MachIdent/MachIdent.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o TopModule_map.ncd TopModule.ngd TopModule.pcf
+par -ise "C:/Documents and Settings/304/Desktop/MachIdent/MachIdent.ise" -w -intstyle ise -ol std -t 1 TopModule_map.ncd TopModule.ncd TopModule.pcf
+trce -ise "C:/Documents and Settings/304/Desktop/MachIdent/MachIdent.ise" -intstyle ise -e 3 -s 4 -xml TopModule TopModule.ncd -o TopModule.twr TopModule.pcf -ucf TopModule.ucf
+bitgen -ise "C:/Documents and Settings/304/Desktop/MachIdent/MachIdent.ise" -intstyle ise -f TopModule.ut TopModule.ncd
+xst -ise "C:/Documents and Settings/304/Desktop/MachIdent/MachIdent.ise" -intstyle ise -ifn "C:/Documents and Settings/304/Desktop/MachIdent/TopModule.xst" -ofn "C:/Documents and Settings/304/Desktop/MachIdent/TopModule.syr"
+ngdbuild -ise "C:/Documents and Settings/304/Desktop/MachIdent/MachIdent.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "TopModule.ngc" TopModule.ngd
+map -ise "C:/Documents and Settings/304/Desktop/MachIdent/MachIdent.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o TopModule_map.ncd TopModule.ngd TopModule.pcf
+par -ise "C:/Documents and Settings/304/Desktop/MachIdent/MachIdent.ise" -w -intstyle ise -ol std -t 1 TopModule_map.ncd TopModule.ncd TopModule.pcf
+trce -ise "C:/Documents and Settings/304/Desktop/MachIdent/MachIdent.ise" -intstyle ise -e 3 -s 4 -xml TopModule TopModule.ncd -o TopModule.twr TopModule.pcf -ucf TopModule.ucf
+bitgen -ise "C:/Documents and Settings/304/Desktop/MachIdent/MachIdent.ise" -intstyle ise -f TopModule.ut TopModule.ncd
+xst -ise "C:/Documents and Settings/304/Desktop/MachIdent/MachIdent.ise" -intstyle ise -ifn "C:/Documents and Settings/304/Desktop/MachIdent/TopModule.xst" -ofn "C:/Documents and Settings/304/Desktop/MachIdent/TopModule.syr"
+ngdbuild -ise "C:/Documents and Settings/304/Desktop/MachIdent/MachIdent.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "TopModule.ngc" TopModule.ngd
+map -ise "C:/Documents and Settings/304/Desktop/MachIdent/MachIdent.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o TopModule_map.ncd TopModule.ngd TopModule.pcf
+par -ise "C:/Documents and Settings/304/Desktop/MachIdent/MachIdent.ise" -w -intstyle ise -ol std -t 1 TopModule_map.ncd TopModule.ncd TopModule.pcf
+trce -ise "C:/Documents and Settings/304/Desktop/MachIdent/MachIdent.ise" -intstyle ise -e 3 -s 4 -xml TopModule TopModule.ncd -o TopModule.twr TopModule.pcf -ucf TopModule.ucf
+bitgen -ise "C:/Documents and Settings/304/Desktop/MachIdent/MachIdent.ise" -intstyle ise -f TopModule.ut TopModule.ncd
+xst -ise "C:/Documents and Settings/304/Desktop/MachIdent/MachIdent.ise" -intstyle ise -ifn "C:/Documents and Settings/304/Desktop/MachIdent/TopModule.xst" -ofn "C:/Documents and Settings/304/Desktop/MachIdent/TopModule.syr"
+ngdbuild -ise "C:/Documents and Settings/304/Desktop/MachIdent/MachIdent.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "TopModule.ngc" TopModule.ngd
+map -ise "C:/Documents and Settings/304/Desktop/MachIdent/MachIdent.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o TopModule_map.ncd TopModule.ngd TopModule.pcf
+par -ise "C:/Documents and Settings/304/Desktop/MachIdent/MachIdent.ise" -w -intstyle ise -ol std -t 1 TopModule_map.ncd TopModule.ncd TopModule.pcf
+trce -ise "C:/Documents and Settings/304/Desktop/MachIdent/MachIdent.ise" -intstyle ise -e 3 -s 4 -xml TopModule TopModule.ncd -o TopModule.twr TopModule.pcf -ucf TopModule.ucf
+bitgen -ise "C:/Documents and Settings/304/Desktop/MachIdent/MachIdent.ise" -intstyle ise -f TopModule.ut TopModule.ncd
+xst -ise "C:/Documents and Settings/304/Desktop/MachIdent/MachIdent.ise" -intstyle ise -ifn "C:/Documents and Settings/304/Desktop/MachIdent/TopModule.xst" -ofn "C:/Documents and Settings/304/Desktop/MachIdent/TopModule.syr"
+ngdbuild -ise "C:/Documents and Settings/304/Desktop/MachIdent/MachIdent.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "TopModule.ngc" TopModule.ngd
+map -ise "C:/Documents and Settings/304/Desktop/MachIdent/MachIdent.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o TopModule_map.ncd TopModule.ngd TopModule.pcf
+par -ise "C:/Documents and Settings/304/Desktop/MachIdent/MachIdent.ise" -w -intstyle ise -ol std -t 1 TopModule_map.ncd TopModule.ncd TopModule.pcf
+trce -ise "C:/Documents and Settings/304/Desktop/MachIdent/MachIdent.ise" -intstyle ise -e 3 -s 4 -xml TopModule TopModule.ncd -o TopModule.twr TopModule.pcf -ucf TopModule.ucf
+bitgen -ise "C:/Documents and Settings/304/Desktop/MachIdent/MachIdent.ise" -intstyle ise -f TopModule.ut TopModule.ncd
+xst -ise "C:/Documents and Settings/304/Desktop/MachIdent/MachIdent.ise" -intstyle ise -ifn "C:/Documents and Settings/304/Desktop/MachIdent/TopModule.xst" -ofn "C:/Documents and Settings/304/Desktop/MachIdent/TopModule.syr"
+ngdbuild -ise "C:/Documents and Settings/304/Desktop/MachIdent/MachIdent.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "TopModule.ngc" TopModule.ngd
+map -ise "C:/Documents and Settings/304/Desktop/MachIdent/MachIdent.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o TopModule_map.ncd TopModule.ngd TopModule.pcf
+par -ise "C:/Documents and Settings/304/Desktop/MachIdent/MachIdent.ise" -w -intstyle ise -ol std -t 1 TopModule_map.ncd TopModule.ncd TopModule.pcf
+trce -ise "C:/Documents and Settings/304/Desktop/MachIdent/MachIdent.ise" -intstyle ise -e 3 -s 4 -xml TopModule TopModule.ncd -o TopModule.twr TopModule.pcf -ucf TopModule.ucf
+bitgen -ise "C:/Documents and Settings/304/Desktop/MachIdent/MachIdent.ise" -intstyle ise -f TopModule.ut TopModule.ncd
+xst -ise "C:/Documents and Settings/304/Desktop/MachIdent/MachIdent.ise" -intstyle ise -ifn "C:/Documents and Settings/304/Desktop/MachIdent/TopModule.xst" -ofn "C:/Documents and Settings/304/Desktop/MachIdent/TopModule.syr"
+ngdbuild -ise "C:/Documents and Settings/304/Desktop/MachIdent/MachIdent.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "TopModule.ngc" TopModule.ngd
+map -ise "C:/Documents and Settings/304/Desktop/MachIdent/MachIdent.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o TopModule_map.ncd TopModule.ngd TopModule.pcf
+par -ise "C:/Documents and Settings/304/Desktop/MachIdent/MachIdent.ise" -w -intstyle ise -ol std -t 1 TopModule_map.ncd TopModule.ncd TopModule.pcf
+trce -ise "C:/Documents and Settings/304/Desktop/MachIdent/MachIdent.ise" -intstyle ise -e 3 -s 4 -xml TopModule TopModule.ncd -o TopModule.twr TopModule.pcf -ucf TopModule.ucf
+bitgen -ise "C:/Documents and Settings/304/Desktop/MachIdent/MachIdent.ise" -intstyle ise -f TopModule.ut TopModule.ncd

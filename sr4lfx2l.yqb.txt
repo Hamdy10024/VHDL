@@ -1,0 +1,39 @@
+﻿
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# Explicit paths specified without -i or -o; assuming --only paths...
+# On branch master
+# Your branch is up-to-date with 'origin/master'.
+#
+# Changes to be committed:
+#	deleted:    LockDetector.ise
+#	deleted:    LockDetector.ntrc_log
+#	deleted:    LockDetector.restore
+#	deleted:    LockDetector.vhd
+#	deleted:    LockDetector_summary.html
+#	deleted:    OperationBlock.vhd
+#	deleted:    ProgrammingBlock.cmd_log
+#	deleted:    ProgrammingBlock.lso
+#	deleted:    ProgrammingBlock.ngc
+#	deleted:    ProgrammingBlock.ngr
+#	deleted:    ProgrammingBlock.prj
+#	deleted:    ProgrammingBlock.stx
+#	deleted:    ProgrammingBlock.syr
+#	deleted:    ProgrammingBlock.vhd
+#	deleted:    ProgrammingBlock.xst
+#	deleted:    ProgrammingBlock_summary.html
+#	deleted:    ProgrammingBlock_vhdl.prj
+#	deleted:    ProgrammingBlock_xst.xrpt
+#	deleted:    _xmsgs/xst.xmsgs
+#	deleted:    clockMaker.vhd
+#	deleted:    xst/dump.xst/ProgrammingBlock.prj/ntrc.scr
+#	deleted:    xst/work/hdllib.ref
+#	deleted:    xst/work/hdpdeps.ref
+#	deleted:    xst/work/sub00/vhpl00.vho
+#	deleted:    xst/work/sub00/vhpl01.vho
+#
+# Untracked files:
+#	LockDetectorFinal/
+#	MachIdentFinal/
+#
+

@@ -1,0 +1,24 @@
+CommandLine-Map
+
+s
+CommandLine-Ngdbuild
+D:\folder\ISE\bin\nt\unwrapped\ngdbuild.exe -ise C:/Documents and Settings/304/Desktop/MachIdent/MachIdent.ise -intstyle ise -dd _ngo -nt timestamp -i -p xc3s200-ft256-4 TopModule.ngc TopModule.ngd
+s
+CommandLine-Par
+
+s
+CommandLine-Xst
+
+s
+Previous-NGD
+TopModule_prev_built.ngd
+s
+Previous-NGM
+
+s
+Previous-Packed-NCD
+
+s
+Previous-Routed-NCD
+
+s
